@@ -20,3 +20,16 @@
 4. User can save their job goal to `career.json`
 
 ## File Structure (Planned)
+skillbridge/
+├── index.js # Main CLI app
+├── training_data.json # Mock job training data
+├── career.json # File to save user job goals
+├── helpers.js # AI call, DB lookup, save logic
+├── .env # API keys
+├── README.md # This file
+├── test/
+│ └── helpers.test.js # Unit tests
+├── package.json
+
+Author
+Built by Ohi and Jared for SEO Tech Developer – Summer 2025.
