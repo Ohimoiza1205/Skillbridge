@@ -1,0 +1,26 @@
+{
+  "name": "skillbridge",
+  "version": "1.0.0",
+  "description": "SkillBridge is a command-line tool that helps job-seekers **improve their existing résumé** *and* **generate a brand-new résumé** in LaTeX/PDF format.",
+  "main": "helpers.js",
+  "type": "module",
+  "bin": {
+    "skillbridge": "./cli.js",
+    "skillbridge-resume": "./resumeBuilder.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ohimoiza1205/skillbridge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://www.github.com/Ohimoiza1205/skillbridge/issues"
+  },
+  "homepage": "https://www.github.com/Ohimoiza1205/skillbridge"
+}
+
