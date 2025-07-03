@@ -1,26 +1,18 @@
 import dotenv from 'dotenv'
-import inquirer from 'inquirer'
 import { parseResume } from './resumeParser.js'
 import fs from 'fs'
 import path from 'path'
+import inquirer from 'inquirer'
+
+console.log('Starting SkillBridge CLI...')
 
 dotenv.config()
+console.log('Environment loaded')
 
 async function main() {
-  console.log('\nWelcome to SkillBridge CLI\n')
+  try {
+    console.log('\nWelcome to SkillBridge CLI\n')
 
-  const { method } = await inquirer.prompt([
-    {
-      type: 'list',
-      name: 'method',
-      message: 'How would you like to start?',
-      choices: ['Upload Resume File', 'Enter Info Manually']
-    }
-  ])
-
-  let resumeData = {}
-
-  if (method === 'Upload Resume File') {
     const { filePath } = await inquirer.prompt([
       {
         type: 'input',
@@ -29,74 +21,57 @@ async function main() {
       }
     ])
 
-    const apiKey = process.env.API_KEY
-    if (!apiKey) {
-      console.error('Error: Missing API key. Make sure .env contains API_KEY=...')
+    console.log(`File path provided: ${filePath}`)
+
+    // Check if file exists
+    if (!fs.existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`)
       process.exit(1)
     }
 
+    console.log('File exists')
+
+    const apiKey = process.env.AFFINDA_API_KEY
+    if (!apiKey) {
+      console.error('Error: Missing AFFINDA_API_KEY in environment')
+      process.exit(1)
+    }
+
+    console.log(`API Key found: ${apiKey.substring(0, 10)}...`)
+
+    console.log('Starting resume parsing...')
     const parsed = await parseResume(filePath, apiKey)
+    
     if (!parsed) {
       console.log('Failed to parse resume. Exiting.')
       return
     }
 
-    resumeData = parsed
-  } else {
-    resumeData = await inquirer.prompt([
-      {
-        type: 'input',
-        name: 'name',
-        message: 'What is your full name?'
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email address?'
-      },
-      {
-        type: 'input',
-        name: 'phone',
-        message: 'What is your phone number?'
-      },
-      {
-        type: 'input',
-        name: 'skills',
-        message: 'List your skills (comma-separated):'
-      },
-      {
-        type: 'input',
-        name: 'summary',
-        message: 'Enter a short professional summary:'
-      }
-    ])
+    console.log('Resume parsed successfully!')
+    console.log('Parsed data:', JSON.stringify(parsed, null, 2))
 
-    // Normalize skills into array if entered manually
-    resumeData.skills = resumeData.skills.split(',').map(s => s.trim())
-  }
-
-  console.log('\nResume Data Collected:\n')
-  console.log(`Name: ${resumeData.name || 'N/A'}`)
-  console.log(`Email: ${resumeData.email || 'N/A'}`)
-  console.log(`Phone: ${resumeData.phone || 'N/A'}`)
-  console.log(`Skills: ${resumeData.skills?.join(', ') || 'N/A'}`)
-
-  const { shouldSave } = await inquirer.prompt([
-    {
-      type: 'confirm',
-      name: 'shouldSave',
-      message: 'Would you like to save this data locally to resume.json?',
-      default: true
+    const resumeData = {
+      name: parsed.name?.raw || 'N/A',
+      email: parsed.emails?.[0] || 'N/A',
+      phone: parsed.phoneNumbers?.[0] || 'N/A',
+      skills: parsed.skills || [],
+      summary: parsed.summary || 'N/A'
     }
-  ])
 
-  if (shouldSave) {
+    console.log('Extracted resume data:', resumeData)
+
     const outputPath = path.join(process.cwd(), 'resume.json')
     fs.writeFileSync(outputPath, JSON.stringify(resumeData, null, 2))
-    console.log(`\nSaved resume data to ${outputPath}`)
-  }
+    console.log(`Saved resume data to ${outputPath}`)
 
-  console.log('\nSkillBridge CLI complete.\n')
+  } catch (error) {
+    console.error('Error in main():', error)
+    process.exit(1)
+  }
 }
 
-main()
+console.log('Calling main function...')
+main().catch(err => {
+  console.error('Unhandled error:', err)
+  process.exit(1)
+})
