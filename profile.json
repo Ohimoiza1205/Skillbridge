@@ -1,15 +1,23 @@
 {
-  "name": "Ohi Moiza",
-  "email": "ohimoiza12@gmail.com",
-  "phone": "8065596366",
+  "name": "Ohinoyi Moiza",
+  "email": "example@gmail.com",
+  "phone": "xxx-xxx-xxxx",
   "currentJob": "SEO Tech Developer",
-  "summary": "Moiza is a rising junior at Texas Tech University, majoring in Computer Science with minors in Mathematics and Actuarial Science. He has a strong passion for technology and finance, particularly fintech, and is actively working on developing his expertise in quantitative finance.",
+  "summary": "Moiza is a rising junior at Texas Tech University, majoring in Computer Science with minors in Mathematics and Actuarial Science and maintaining a 3.8 GPA. He has cultivated a strong passion for technology and finance, especially fintech, through coursework in algorithms, data structures, and financial modeling. Actively developing his expertise in quantitative finance, Moiza has completed projects involving statistical analysis of market data and the implementation of basic trading algorithms in Python. He thrives in collaborative environments, brings a methodical problem-solving approach, and is eager to apply his analytical skills and technical foundation to real-world challenges in a software engineering or quantitative finance role",
   "skills": [
     "C",
     "C++",
     "Java",
-    "Python"
+    "Python",
+    "SQL",
+    "JavaScript",
+    "Perl",
+    "Node.js",
+    "AWS",
+    "PowerBI",
+    "FactSet",
+    "C#"
   ],
-  "education": "B.Sc in CS, Texas Tech University",
+  "education": "B.Sc in Computer Science, Texas Tech University        (Expected: May 2027)",
   "targetJob": "Software Engineer Intern"
 }

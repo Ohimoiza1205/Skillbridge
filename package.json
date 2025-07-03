@@ -21,6 +21,17 @@
   "bugs": {
     "url": "https://www.github.com/Ohimoiza1205/skillbridge/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://www.github.com/Ohimoiza1205/skillbridge"
 }
 
+=======
+  "homepage": "https://www.github.com/Ohimoiza1205/skillbridge",
+  "dependencies": {
+    "@google-ai/generativelanguage": "^3.2.0",
+    "axios": "^1.10.0",
+    "commander": "^14.0.0",
+    "dotenv": "^17.0.1"
+  }
+}
+>>>>>>> 7e660eedc3a9a1153f6feca47eed64a2180ae645

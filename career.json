@@ -362,5 +362,113 @@
         "provider": "Interviewing.io"
       }
     ]
+  },
+  {
+    "jobTitle": "Software Engineer",
+    "savedAt": "2025-07-03T04:38:50.601Z",
+    "programs": [
+      {
+        "name": "LeetCode",
+        "provider": "LeetCode Inc."
+      },
+      {
+        "name": "NeetCode",
+        "provider": "NeetCode.io"
+      },
+      {
+        "name": "CodeSignal",
+        "provider": "CodeSignal"
+      },
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "Interviewing.io",
+        "provider": "Interviewing.io"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "savedAt": "2025-07-03T04:39:04.398Z",
+    "programs": [
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "SQL for Data Analysis",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Data Analyst Interview Guide",
+        "provider": "DataCamp"
+      },
+      {
+        "name": "SQL Cheat Sheet",
+        "provider": "SQLBolt"
+      },
+      {
+        "name": "Mode Analytics SQL",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Pandas for Data Analysis",
+        "provider": "DataCamp"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Quantitative Trader",
+    "savedAt": "2025-07-03T04:39:26.045Z",
+    "programs": [
+      {
+        "name": "Quantitative Trading with Python",
+        "provider": "Udemy"
+      },
+      {
+        "name": "Machine Learning for Trading",
+        "provider": "Coursera"
+      },
+      {
+        "name": "Algorithmic Trading with Python",
+        "provider": "QuantInsti"
+      },
+      {
+        "name": "QuantConnect Lean Engine",
+        "provider": "QuantConnect"
+      },
+      {
+        "name": "Computational Finance",
+        "provider": "edX"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Investment Banker",
+    "savedAt": "2025-07-03T04:39:45.027Z",
+    "programs": [
+      {
+        "name": "Wall Street Prep Financial Modeling",
+        "provider": "Wall Street Prep"
+      },
+      {
+        "name": "Financial Modeling & Valuation",
+        "provider": "CFI"
+      },
+      {
+        "name": "Breaking Into Wall Street",
+        "provider": "BIWS"
+      },
+      {
+        "name": "Investment Banking Fundamentals",
+        "provider": "Coursera"
+      },
+      {
+        "name": "Wall Street Prep Excel Crash Course",
+        "provider": "Wall Street Prep"
+      }
+    ]
   }
 ]
