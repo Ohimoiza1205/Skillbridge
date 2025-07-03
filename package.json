@@ -21,6 +21,12 @@
   "bugs": {
     "url": "https://www.github.com/Ohimoiza1205/skillbridge/issues"
   },
-  "homepage": "https://www.github.com/Ohimoiza1205/skillbridge"
+  "homepage": "https://www.github.com/Ohimoiza1205/skillbridge",
+  "dependencies": {
+    "form-data": "^4.0.3",
+    "inquirer": "^12.7.0",
+    "mime-types": "^3.0.1",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.2.0"
+  }
 }
-
