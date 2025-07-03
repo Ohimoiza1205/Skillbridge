@@ -180,5 +180,187 @@
         "provider": "Interviewing.io"
       }
     ]
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "savedAt": "2025-07-02T22:30:48.924Z",
+    "programs": [
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "SQL for Data Analysis",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Data Analyst Interview Guide",
+        "provider": "DataCamp"
+      },
+      {
+        "name": "SQL Cheat Sheet",
+        "provider": "SQLBolt"
+      },
+      {
+        "name": "Mode Analytics SQL",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Pandas for Data Analysis",
+        "provider": "DataCamp"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Quantitative Trader",
+    "savedAt": "2025-07-02T22:31:10.591Z",
+    "programs": [
+      {
+        "name": "Quantitative Trading with Python",
+        "provider": "Udemy"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Program Manager",
+    "savedAt": "2025-07-02T22:31:27.947Z",
+    "programs": [
+      {
+        "name": "PMP Certification Prep",
+        "provider": "Project Management Institute"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Investment Banker",
+    "savedAt": "2025-07-02T22:31:46.555Z",
+    "programs": [
+      {
+        "name": "Wall Street Prep Financial Modeling",
+        "provider": "Wall Street Prep"
+      }
+    ]
+  },
+  {
+    "jobTitle": "IT Administrator",
+    "savedAt": "2025-07-02T22:32:04.846Z",
+    "programs": [
+      {
+        "name": "CompTIA A+ Certification",
+        "provider": "CompTIA"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Software Engineer",
+    "savedAt": "2025-07-02T22:37:03.349Z",
+    "programs": [
+      {
+        "name": "LeetCode",
+        "provider": "LeetCode Inc."
+      },
+      {
+        "name": "NeetCode",
+        "provider": "NeetCode.io"
+      },
+      {
+        "name": "CodeSignal",
+        "provider": "CodeSignal"
+      },
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "Interviewing.io",
+        "provider": "Interviewing.io"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "savedAt": "2025-07-02T22:37:25.290Z",
+    "programs": [
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "SQL for Data Analysis",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Data Analyst Interview Guide",
+        "provider": "DataCamp"
+      },
+      {
+        "name": "SQL Cheat Sheet",
+        "provider": "SQLBolt"
+      },
+      {
+        "name": "Mode Analytics SQL",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Pandas for Data Analysis",
+        "provider": "DataCamp"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "savedAt": "2025-07-03T00:07:04.396Z",
+    "programs": [
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "SQL for Data Analysis",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Data Analyst Interview Guide",
+        "provider": "DataCamp"
+      },
+      {
+        "name": "SQL Cheat Sheet",
+        "provider": "SQLBolt"
+      },
+      {
+        "name": "Mode Analytics SQL",
+        "provider": "Mode Analytics"
+      },
+      {
+        "name": "Pandas for Data Analysis",
+        "provider": "DataCamp"
+      }
+    ]
+  },
+  {
+    "jobTitle": "Software Engineer",
+    "savedAt": "2025-07-03T00:07:36.955Z",
+    "programs": [
+      {
+        "name": "LeetCode",
+        "provider": "LeetCode Inc."
+      },
+      {
+        "name": "NeetCode",
+        "provider": "NeetCode.io"
+      },
+      {
+        "name": "CodeSignal",
+        "provider": "CodeSignal"
+      },
+      {
+        "name": "Resume.lol",
+        "provider": "Resume.lol"
+      },
+      {
+        "name": "Interviewing.io",
+        "provider": "Interviewing.io"
+      }
+    ]
   }
 ]
